@@ -1,0 +1,22 @@
+/* block B*/
+.b{
+    padding: 48px;
+    background-color: #fbfbfb;
+}
+.b__blocks {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    max-width: 920px;
+
+    margin: 0 auto;
+}
+.b__card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+
+}
+/* block c*/
+/* / Block c */
