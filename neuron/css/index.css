@@ -1,0 +1,76 @@
+:root {
+    /* reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font: var(--font-body);
+        color: var(--color-dark);
+    }
+    img {
+        display: inline-block;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    /* colors */
+    --color-main: #4391F0;
+    --color-dark: #1F1F1F;
+    --color-light: #F3F3F3;
+
+    /* fonts */
+    --font-title-xl: 400 clamp(48px, 5vw, 64px); "Hedvig Letters Serif", serif;
+    --font-title-lg: 400 clamp(24px, 5vw, 32px); "Hedvig Letters Serif", serif;
+    --font-title-md: 400 clamp(19px, 5vw, 24px); "Hedvig Letters Serif", serif;
+    --font-title-sm: 500 clamp(17px, 5vw, 19px); "Instrument Sans", sans-serif;
+
+    --font-body: 400 15px; "Instrument Sans", sans-serif;
+    --font-link: 500 15px; "Instrument Sans", sans-serif;
+
+    /* size */
+    --size-max-width: 964px;
+
+
+    /* spacing */
+    --spacing-sm: 10px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    /* shadow */
+
+    /* radius */
+    --radius-sm: 5px;
+    --radius-full: 100px;
+}
+    /* reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        display: inline-block;
+        max-width: 100%;
+        width: 100%;
+        border-radius: var(--radius-sm);
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        font: var(--font-link);
+    }
+    h1, .title-xl {
+        font: var(--font-title-xl);
+    }
+    h2, .title-lg {
+        font: var(--font-title-lg);
+    }
+    h3, .title-md {
+        font: var(--font-title-md);
+    }
+    h4, .title-sm {
+        font: var(--font-title-sm);
+    }
+    
