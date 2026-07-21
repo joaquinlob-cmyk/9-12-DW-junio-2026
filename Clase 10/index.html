@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="reservation" action="#" method="GET">
+        <Div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Name">
+        </Div>
+        <Div class="field">
+            <label for="surname">Surname</label>
+            <input id="surname" name="surname" type="text" placeholder="Surname">
+        </Div>
+        <Div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="Example@email.com">
+        </Div>
+        <fieldset>
+            <legend>Reservation</legend>
+            <Div class="field">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date">
+            </Div>
+            <div class="field">
+                <label for="hour">Hour</label>
+                <input name="hour" name="hour" type="time">
+            </div>
+        </fieldset>
+
+        <div class="field field-acceptance">
+            <input name="acceptance" id="acceptance" required type="checkbox">
+            <label for="acceptance">He leído las políticas.</label>
+        </div>
+        <button class="form__submit" type="submit">
+            Send
+            <i class="ri-send-ins-line"></i>
+        </button>
+    </form>
+</body>
+
+</html>
