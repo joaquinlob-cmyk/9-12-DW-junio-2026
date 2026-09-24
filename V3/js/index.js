@@ -31,12 +31,17 @@ const lvlUp = document.getElementById('btn-subir-nivel')
 
 lvlUp.style = 'display: none;'
 
-let count = 0
-let lvl = 1
+let count = localStorage.getItem('points') != null ? localStorage.getItem('points'): 0;
+let lvl = localStorage.getItem('lvl') != null ? localStorage.getItem('lvl') : 1;
+let nextLvl = localStorage.getItem('nextLvl') != null ? localStorage.getItem('nextLvl') : 10;
+
+points.innerText = count
+gloton.style = `font-size: calc(3rem + ${count}rem)`
 
 function alimentar() {
     if (count < 10) {
         count++
+        localStorage.setItem('points', count)
         points.innerText = count
         lvlUp.style = 'display: none;'
 
@@ -50,8 +55,11 @@ function alimentar() {
 
 function subirNivel(){
     lvl++ 
+    localStorage.setItem('lvl', lvl)
     points.innerText = count
     gloton.style = `font-size: calc(3rem + ${count}rem)`
     lvlUp.style = 'display: none;'
+    nextLvl += 10;
+    localStorage.setItem('nextlvl', nextLvl)
 
 }
